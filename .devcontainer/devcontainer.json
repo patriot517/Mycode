@@ -1,0 +1,15 @@
+{
+  "name": "Mycode",
+  "image": "pytorch/pytorch:2.8.0-cuda12.6-cudnn9-devel",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
